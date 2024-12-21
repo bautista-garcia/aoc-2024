@@ -1,13 +1,10 @@
 column1, column2 = [], []
 
-# Open and read the file
 with open('input.txt', 'r') as file:
     for line in file:
-        # Split the line into two values
         value1, value2 = line.strip().split()
-        # Append each value to the respective list
-        column1.append(int(value1))  # Change to float(value1) if needed
-        column2.append(int(value2))  # Change to float(value2) if needed
+        column1.append(int(value1))  
+        column2.append(int(value2))  
 
 
 column1.sort()
